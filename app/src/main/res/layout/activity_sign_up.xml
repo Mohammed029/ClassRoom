@@ -83,12 +83,12 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
         android:layout_marginTop="44dp"
-        android:text="Already a member?"
         android:fontFamily="@font/ubuntu"
+        android:text="Already a member?"
         android:textColor="@color/colorText"
         android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSignUp" />
 
@@ -96,12 +96,12 @@
         android:id="@+id/tvSinIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:textColor="@color/colorPrimaryDark"
         android:fontFamily="@font/ubuntu"
         android:text="Sign In"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
