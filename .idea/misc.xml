@@ -6,12 +6,14 @@
         <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/drawable-v24/bottom_sheet_bg.xml" value="0.1455" />
         <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1455" />
         <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/drawable/add_circle_24.xml" value="0.155" />
+        <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/drawable/arrow_down.xml" value="0.155" />
         <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/layout/activity_add_user.xml" value="0.22" />
-        <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/layout/activity_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/layout/activity_home.xml" value="0.2" />
         <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/layout/activity_sign_in.xml" value="0.25" />
         <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/layout/activity_sign_up.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/layout/bottom_sheet_dialog.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/layout/create_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/layout/fragment_feed.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/layout/row_assignment.xml" value="0.20416666666666666" />

@@ -15,7 +15,7 @@
         android:layout_marginEnd="16dp"
         android:scaleType="centerCrop"
         android:src="@drawable/ic_user_avatar"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -29,11 +29,12 @@
         android:includeFontPadding="false"
         tools:text="Good Morning "
         android:textColor="@color/colorText"
-        android:textSize="30dp"
+        android:textSize="26dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/imgUser"
+        android:drawableRight="@drawable/arrow_down_24"
+        app:layout_constraintRight_toLeftOf="@+id/imgUser"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <TextView
         android:id="@+id/tvEmail"
