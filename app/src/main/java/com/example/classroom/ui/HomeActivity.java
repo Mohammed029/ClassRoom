@@ -18,17 +18,22 @@ import com.example.classroom.databinding.BottomSheetDialogBinding;
 import com.example.classroom.databinding.CreateMenuBinding;
 import com.example.classroom.model.User;
 import com.example.classroom.utils.Constant;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.QuerySnapshot;
 import com.squareup.picasso.Picasso;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
@@ -49,6 +54,7 @@ public class HomeActivity extends AppCompatActivity {
         firebaseFirestore = FirebaseFirestore.getInstance();
         setupTab();
         setupDate();
+        getAllUsers();
         firebaseFirestore.collection(Constant.KEY_COLLECTION_USERS)
                 .document(auth.getUid())
                 .addSnapshotListener(new EventListener<DocumentSnapshot>() {
@@ -185,5 +191,31 @@ public class HomeActivity extends AppCompatActivity {
                         }
                     }
                 }).attach();
+    }
+    private void getAllUsers() {
+
+        firebaseFirestore.collection(Constant.KEY_COLLECTION_USERS)
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        ArrayList<String> List= new ArrayList<>();
+                        if (task != null && task.isSuccessful()) {
+                            for(DocumentSnapshot snapshot:task.getResult().getDocuments()) {
+
+                                String s= snapshot.getString(auth.getUid());
+                                List.add(s);
+
+                            }
+                            if (auth.getUid()==List.get(0)) {
+                                activityHomeBinding.floatingActionButton.setVisibility(View.VISIBLE);
+
+                            }else {
+                                activityHomeBinding.floatingActionButton.setVisibility(View.GONE);
+                                return;
+                            }
+                        }
+                    }
+                });
     }
 }
