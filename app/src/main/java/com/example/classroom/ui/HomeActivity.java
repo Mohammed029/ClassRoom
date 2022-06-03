@@ -15,6 +15,7 @@ import com.example.classroom.R;
 import com.example.classroom.adapter.ViewPagerAdapter;
 import com.example.classroom.databinding.ActivityHomeBinding;
 import com.example.classroom.databinding.BottomSheetDialogBinding;
+import com.example.classroom.databinding.CreateMenuBinding;
 import com.example.classroom.model.User;
 import com.example.classroom.utils.Constant;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
@@ -75,10 +76,30 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Dialog dialog= new Dialog(HomeActivity.this);
-                dialog.setContentView(R.layout.create_menu);
+                CreateMenuBinding binding = CreateMenuBinding.inflate(getLayoutInflater());
+                dialog.setContentView(binding.getRoot());
+                binding.btnFeed.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        dialog.dismiss();
+
+                        AddPostDialog addPostDialog = new AddPostDialog();
+                        addPostDialog.show(getSupportFragmentManager(), "AddPostDialog");
+                    }
+                });
+                binding.btnAssignment.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        dialog.dismiss();
+
+                        AddAssignmentSheet addAssignmentSheet = new AddAssignmentSheet();
+                        addAssignmentSheet.show(getSupportFragmentManager(),"AddAssignmentSheet");
+                    }
+                });
                 dialog.show();
             }
         });
+
     }
     private void bottomSheetDialog() {
         activityHomeBinding.tvGreeting.setOnClickListener(new View.OnClickListener() {

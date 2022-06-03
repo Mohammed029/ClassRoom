@@ -13,11 +13,15 @@
         <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/layout/activity_sign_in.xml" value="0.25" />
         <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/layout/activity_sign_up.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/layout/activity_test_upload.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/layout/botom_sheet_fragment_add_assignemt.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/layout/bottom_sheet_dialog.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/layout/create_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/layout/dialog_add_post.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/layout/fragment_assigment.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/layout/fragment_feed.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/layout/row_assignment.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/layout/row_post.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/layout/row_assignment.xml" value="0.22" />
+        <entry key="..\:/Users/Mohammed/AndroidStudioProjects/ClassRoom/app/src/main/res/layout/row_post.xml" value="0.2" />
       </map>
     </option>
   </component>

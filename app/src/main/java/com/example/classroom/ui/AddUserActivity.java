@@ -242,7 +242,7 @@ public class AddUserActivity extends AppCompatActivity {
 
     private void pickImage() {
         Intent pickIntent = new Intent(Intent.ACTION_PICK,
-                android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         pickIntent.setType("image/*");
         pickIntent.setAction(Intent.ACTION_GET_CONTENT);
         getLauncher.launch(pickIntent);
